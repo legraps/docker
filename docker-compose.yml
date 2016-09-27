@@ -6,4 +6,4 @@ master:
     - "50000:50000"
     - "80:8080"
   volumes:
-    - /var/jenkins_home
+    - jenkins_home:/var/jenkins_home
