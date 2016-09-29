@@ -74,7 +74,6 @@ COPY plugins.txt /usr/share/jenkins/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 
 COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/executors.groovy
-COPY basic-security.groovy /usr/share/jenkins/ref/init.groovy.d/basic-security.groovy
 
 # Install Googles repo-tool in the newest version
 USER root
