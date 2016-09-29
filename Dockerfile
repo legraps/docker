@@ -71,3 +71,9 @@ COPY plugins.sh /usr/local/bin/plugins.sh
 COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 
 COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/executors.groovy
+
+# Install Googles repo-tool in the newest version
+USER root
+RUN curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo
+RUN chmod a+x /usr/bin/repo
+USER ${user}
