@@ -1,7 +1,7 @@
 master:
   build: .
   environment:
-    JAVA_OPTS: "-Djava.awt.headless=true -Dhudson.footerURL=http://www.u-experten.de/ -Duser.timezone=Europe/Berlin"
+    JAVA_OPTS: "-Djava.awt.headless=true -Dhudson.footerURL=http://www.u-experten.de/ -Duser.timezone=Europe/Berlin -Djenkins.slaves.JnlpSlaveAgentProtocol3.enabled=true"
   ports:
     - "50000:50000"
     - "80:8080"
