@@ -9,6 +9,7 @@ conditional-buildstep
 copyartifact
 credentials
 display-url-api
+docker-custom-build-environment
 durable-task
 email-ext
 emailext-template
